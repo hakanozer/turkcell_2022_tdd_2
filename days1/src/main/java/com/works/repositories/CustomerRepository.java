@@ -13,8 +13,4 @@ public interface CustomerRepository extends JpaRepository<Customer, Long> {
 
     Page<List<Customer>> findByTitleContainsAllIgnoreCase(String title, Pageable pageable);
 
-
-
-
-
 }
