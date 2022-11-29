@@ -22,7 +22,7 @@ public class CustomerRestController {
         if (customer1 != null) {
             return new ResponseEntity<>(customer1, HttpStatus.OK);
         }else {
-            return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(customer, HttpStatus.OK);
         }
     }
 
